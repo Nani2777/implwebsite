@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">    
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap-tour.min.css" rel="stylesheet">
   </head>
   <body id="top">
 
@@ -459,7 +461,30 @@
     <script src="js/owl.carousel.min.js"></script>
     
     <script src="js/custom.js"></script>
-
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-tour.min.js"></script>     
+    <script>// Instance the tour
+      var tour = new Tour({
+        steps: [
+        {
+          element: "#my-element",
+          title: "Title of my step",
+          content: "Content of my step"
+        },
+        {
+          element: "#my-other-element",
+          title: "Title of my step",
+          content: "Content of my step"
+        }
+      ]});
+      
+      // Initialize the tour
+      tour.init();
+      
+      // Start the tour
+      tour.start();
+      </script>
      
   </body>
 </html>
