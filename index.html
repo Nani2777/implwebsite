@@ -465,10 +465,11 @@
     <script src="bootstrap.min.js"></script>
     <script src="bootstrap-tour.min.js"></script>     
     <script>// Instance the tour
+    console.log('entered');
       var tour = new Tour({
         steps: [
         {
-          element: "#top > div > header > div > div > nav > ul > li:nth-child(1) > a",
+          element: ".section-title.mb-3",
           title: "Title of my step",
           content: "Content of my step"
         },
@@ -481,9 +482,11 @@
       
       // Initialize the tour
       tour.init();
+      console.log('initiated');
       
       // Start the tour
       tour.start();
+      console.log('started');
       </script>
      
   </body>
